@@ -4,7 +4,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { trpc } from '../(trpc)/client';
 import { Loader2 } from 'lucide-react';
 
-const Page = () => {
+const Page = async () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const origin = searchParams.get('origin');
