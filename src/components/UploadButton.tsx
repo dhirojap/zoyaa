@@ -17,7 +17,7 @@ const UploadDropzone = ({ isSubscribed }: { isSubscribed: boolean }) => {
   const [uploadProgress, setUploadProgress] = useState<number>(0);
 
   const { startUpload } = useUploadThing(
-    isSubscribed ? 'proplanUploader' : 'freeplanUploader'
+    isSubscribed ? 'proPlanUploader' : 'freePlanUploader'
   );
 
   const { mutate: startPolling } = trpc.getFile.useMutation({

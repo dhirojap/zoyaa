@@ -77,7 +77,8 @@ const Dashboard = ({ subscriptionPlan }: PageProps) => {
                     {format(new Date(file.createdAt), 'd MMM yyyy')}
                   </div>
                   <div className='flex items-center gap-2'>
-                    <MessageSquare className='h-4 w-4' />I love you
+                    <MessageSquare className='h-4 w-4' />
+                    &copy; Dhiro Jap
                   </div>
 
                   <Button

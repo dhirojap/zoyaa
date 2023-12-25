@@ -9,6 +9,11 @@ const nextConfig = {
       },
       {
         source: '/sign-out',
+        destination: '/api/auth/logout',
+        permanent: true,
+      },
+      {
+        source: '/sign-up',
         destination: '/api/auth/register',
         permanent: true,
       },

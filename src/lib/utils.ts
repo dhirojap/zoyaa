@@ -1,5 +1,5 @@
 import { type ClassValue, clsx } from 'clsx';
-import { Metadata } from 'next';
+import { Metadata, ResolvingMetadata } from 'next';
 import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
@@ -31,22 +31,17 @@ export function constructMetadata({
     openGraph: {
       title,
       description,
-      images: [
-        {
-          url: image,
-        },
-      ],
+      images: ['/thumbnail.jpg'],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
       images: [image],
-      creator: '@dhirojap',
+      creator: '@dhiroojap',
     },
     icons,
     metadataBase: new URL('https://zoyaa.vercel.app'),
-    themeColor: '#FFF',
     ...(noIndex && {
       robots: {
         index: false,
